@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Batallita</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>La guerra</h1>
+
+    <div class="inicio">
+      <input id="nom1" placeholder="Jugador 1" value="P1" />
+      <input id="nom2" placeholder="Jugador 2" value="P2" />
+      <button id="btnInicio">Comenzar</button>
+    </div>
+
+    <div class="campo" style="display: none">
+      <div class="luchador" id="box1">
+        <div class="carita">🫅🏽</div>
+        <div class="etiqueta" id="lbl1"></div>
+        <div class="vida" id="vida1">Vida: 10</div>
+      </div>
+      <div class="luchador" id="box2">
+        <div class="carita">🫅🏽</div>
+        <div class="etiqueta" id="lbl2"></div>
+        <div class="vida" id="vida2">Vida: 10</div>
+      </div>
+    </div>
+
+    <div class="mensaje" id="info"></div>
+    <div class="ruleta" id="ruleta"></div>
+    <button id="btnTurno" style="display: none">Turno</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
