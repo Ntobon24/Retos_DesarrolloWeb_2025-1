@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>La guerra</h1>
+
+  <div class="inicio" *ngIf="!juegoIniciado">
+    <input [(ngModel)]="nom1" placeholder="Jugador 1" />
+    <input [(ngModel)]="nom2" placeholder="Jugador 2" />
+    <button (click)="iniciarJuego()">Comenzar</button>
+  </div>
+
+  <div class="campo" *ngIf="juegoIniciado">
+    <div class="luchador" [class.golpe]="golpeJ1">
+      <div class="carita">🫅🏻</div>
+      <div class="etiqueta">{{ j1?.nombre }}</div>
+      <div class="vida">Vida: {{ j1?.vida }}</div>
+    </div>
+    <div class="luchador" [class.golpe]="golpeJ2">
+      <div class="carita">🫅🏻</div>
+      <div class="etiqueta">{{ j2?.nombre }}</div>
+      <div class="vida">Vida: {{ j2?.vida }}</div>
+    </div>
+  </div>
+
+  <div class="mensaje">{{ mensaje }}</div>
+  <div class="ruleta">{{ ruleta }}</div>
+  
+  <div class="controles" *ngIf="juegoIniciado">
+    <button 
+      (click)="hacerTurno()" 
+      [disabled]="turnoEnProceso || (j1 && j2 && (!j1.vivo() || !j2.vivo()))">
+      Turno
+    </button>
+    <button (click)="reiniciarJuego()" class="btn-reiniciar">
+      Reiniciar
+    </button>
+  </div>
+
+  <div class="ganador" *ngIf="ganador">
+    <h2>{{ ganador }} es el ganador!</h2>
+  </div>
+</div>
