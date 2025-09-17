@@ -1,0 +1,23 @@
+input[type="file"]{
+    display: none;
+}
+
+label{
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+
+.primary {
+  background-color: #ffb703;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background-color: #d00000;
+}

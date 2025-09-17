@@ -1,0 +1,44 @@
+#profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+#profile img{
+  width: 100px;
+  display: block;
+  border-radius: 50px;
+}
+
+#profile div{
+  text-align: center;
+}
+
+#profile div span{
+  display: block;
+}
+
+#profile div span:first-child{
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+#gallery img{
+  width: 300px;
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+
+#gallery img:hover{
+  border-color:#fb8500;
+  opacity: 0.7;
+}

@@ -1,0 +1,33 @@
+header {
+  background-color: #219ebc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: #023047;
+}
+
+ul li:first-child {
+  font-size: 1.5em;
+}

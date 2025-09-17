@@ -1,0 +1,25 @@
+<section id="profile">
+  <div>
+    <img src="/assets/batman_avatar.webp" />
+    <span id="userName">{{username}}</span>
+  </div>
+  <div>
+    <span>
+      {{user()!.gallery!.length}}
+    </span>
+    <span>Publicaciones</span>
+  </div>
+  <div>
+    <span>{{followers}}</span>
+    <span>Seguidores</span>
+  </div>
+  <div>
+    <span>{{requests}}</span>
+    <span>Solicitudes</span>un cambio bob
+  </div>
+</section>
+<section id="gallery">
+  @for(image of user()!.gallery!; track image){
+    <img [src]="image" />
+  }
+</section>

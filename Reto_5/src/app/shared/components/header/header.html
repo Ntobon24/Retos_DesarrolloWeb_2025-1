@@ -1,0 +1,16 @@
+<header>
+  @if(isLogged()){
+  <nav>
+    <ul>
+      <li>InstaPIC</li>
+      <li><a routerLink="home">Inicio</a></li>
+      <li><a href="">Mi perfil</a></li>
+      <li><a href="">Buscar</a></li>
+      <li><a routerLink="upload">Nueva publicación</a></li>
+      <li><a (click)="onLogout()">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+  }@else{
+  <h1>InstaPIC</h1>
+  }
+</header>
